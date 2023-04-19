@@ -5,8 +5,8 @@
 
 * Collect and preprocess data:
 
-Gather a labeled dataset containing images for each class you want to classify.
-Resize images to a consistent size (e.g., 224x224 pixels) if they have different dimensions.
+- [x] Gather a labeled dataset containing images for each class you want to classify. 
+- [ ] Resize images to a consistent size (e.g., 224x224 pixels) if they have different dimensions.
 Split the dataset into training, validation, and test sets, typically using an 80-10-10 or 70-15-15 ratio.
 Normalize pixel values to a standard scale, such as [0, 1] or [-1, 1].
 
