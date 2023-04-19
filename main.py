@@ -6,14 +6,14 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Flatten, Dropou
 # Load and preprocess data
 train_datagen = ImageDataGenerator(rescale=1./255, validation_split=0.1)
 train_generator = train_datagen.flow_from_directory(
-    "path/to/your/images",
+    "./data/train",
     target_size=(224, 224),
     batch_size=32,
     class_mode="categorical",
     subset="training"
 )
 validation_generator = train_datagen.flow_from_directory(
-    "path/to/your/images",
+    "./data/valid",
     target_size=(224, 224),
     batch_size=32,
     class_mode="categorical",
@@ -41,4 +41,4 @@ model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accur
 model.fit(train_generator, epochs=20, validation_data=validation_generator)
 
 # Save the model
-model.save("your_image_classifier.h5")
+model.save("./models/minion_image_classifier.h5")
