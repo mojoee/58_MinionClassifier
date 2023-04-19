@@ -37,7 +37,8 @@ def visualize_classification(model_path, image_path, class_labels):
     Predicted#3: {predicted_class_label[2]} ({confidence[2] * 100:.2f}%)
     """, x=0.9, y=0.9)
     plt.axis("off")
-    plt.show()
+    # plt.show()
+    plt.savefig("./docs/inference.jpg")
 
 # Example usage
 model_path = "./models/minion_image_classifier.h5"

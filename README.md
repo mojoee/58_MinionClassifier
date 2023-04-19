@@ -1,5 +1,10 @@
 # Minion Classifier
 
+## Project
+
+Since many people have trouble to distinguish minions, I finally went ahead and solved this problem. I trained a machine learning model to distinguish with more than 80% accuracy all 20 different kind of minions. Here is an example output
+
+![Sample Test](./docs/inference.jpg)
 
 ## Todos
 
